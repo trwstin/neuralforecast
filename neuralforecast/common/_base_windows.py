@@ -132,7 +132,7 @@ class BaseWindows(BaseModel):
 
     def _create_windows(self, batch, step, w_idxs=None):
         # Parse common data
-        window_size = self.input_size + self.h
+        window_size = self.input_size
         temporal_cols = batch["temporal_cols"]
         temporal = batch["temporal"]
 
